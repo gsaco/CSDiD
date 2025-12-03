@@ -1,0 +1,25 @@
+# CSDiD Project - Python Requirements
+# =====================================
+# This file contains all Python packages required for running the analysis notebooks.
+# Install with: pip install -r requirements.txt
+
+# Core Data Science
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Statistical Modeling
+statsmodels>=0.14.0
+linearmodels>=5.0
+scipy>=1.10.0
+
+# Callaway-Sant'Anna Difference-in-Differences
+csdid>=0.1.0
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.20.0

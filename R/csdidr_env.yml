@@ -1,0 +1,53 @@
+name: csdidr
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.2
+  - r-tidyverse
+  - r-broom
+  - r-knitr
+  - r-kableextra
+  - r-gridextra
+  - r-scales
+  - r-irkernel
+  # These might be missing from conda-forge in the future; we fallback to the install script
+  - r-fixest
+  - r-did
+  - r-rjava
+  - pip
+  # Optional useful tools
+  - jupyterlab
+  - nodejs
+  - libxml2
+  - r-devtools
+  - r-rcpp
+  - r-rmarkdown
+  - r-curl
+  - r-xml
+  - r-jsonlite
+  - r-haven
+  - r-readr
+  - r-tidyr
+  - r-dplyr
+  - r-ggplot2
+  - r-rlang
+  - r-purrr
+  - r-stringr
+  - r-forcats
+  - r-cli
+  - r-pkgbuild
+  - r-checkmate
+  - r-assertthat
+  - r-ps
+  - r-xml2
+  - r-withr
+  - r-remotes
+  - r-rcpp
+  - openssl
+  - libcurl
+  - zlib
+  
+# Notes:
+# - conda-forge may not package every R package; the install script `install_packages.R` in this repo will install any R packages not available via conda.
+# - This YAML pins R base to 4.2; modify to your preferred R version if needed.
+# - You can create the environment with: `conda env create -f R/csdidr_env.yml`.
