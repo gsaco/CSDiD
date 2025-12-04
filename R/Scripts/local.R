@@ -63,8 +63,8 @@ min_et <- min(data_treated$event_time)
 max_et <- max(data_treated$event_time)
 
 cat(paste("\nRango de event_time:", min_et, "a", max_et, "\n"))
-lower_bound <- -5
-upper_bound <- 5
+lower_bound <- -10
+upper_bound <- 20
 cat(paste("Límite inferior elegido:", lower_bound, "\n"))
 cat(paste("Límite superior elegido:", upper_bound, "\n"))
 
