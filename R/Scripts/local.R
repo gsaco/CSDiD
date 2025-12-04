@@ -217,19 +217,16 @@ if(requireNamespace("knitr", quietly = TRUE)) {
 
 # 1. Agregación por GRUPO
 agg_group <- aggte(csdid_results, type = "group", na.rm = TRUE)
-cat("--- 1. AGREGACIÓN POR GRUPO ---\n")
 summary(agg_group)
 ggdid(agg_group)
 
 # 2. Agregación por PERÍODO (calendario)
 agg_time <- aggte(csdid_results, type = "calendar", na.rm = TRUE)
-cat("\n--- 2. AGREGACIÓN POR PERÍODO ---\n")
 summary(agg_time)
 ggdid(agg_time)
 
 # 3. Agregación por EVENT-TIME (dinámica)
 agg_event <- aggte(csdid_results, type = "dynamic", na.rm = TRUE)
-cat("\n--- 3. AGREGACIÓN POR EVENT-TIME ---\n")
 summary(agg_event)
 ggdid(agg_event)
 
