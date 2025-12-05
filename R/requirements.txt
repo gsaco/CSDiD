@@ -1,0 +1,44 @@
+# CSDiD Project - R Requirements
+# ================================
+# This file contains all R packages required for running the analysis notebooks.
+# 
+# Installation Instructions:
+# --------------------------
+# Option 1: Run in R/RStudio:
+#   install.packages(c("tidyverse", "fixest", "did", "broom", "knitr", "kableExtra", "gridExtra", "scales", "IRkernel"))
+#
+# Option 2: Install from this file using the install_packages.R script
+#
+# Required R Packages:
+# --------------------
+
+# Core Data Manipulation
+tidyverse    # >= 2.0.0 - Data manipulation, visualization (includes dplyr, ggplot2, tidyr, etc.)
+
+# Econometric Analysis
+fixest       # >= 0.11.0 - Fast fixed-effects estimation
+did          # >= 2.1.0 - Callaway-Sant'Anna Difference-in-Differences
+
+# Results Formatting
+broom        # >= 1.0.0 - Tidy model outputs
+knitr        # >= 1.40 - Report generation
+kableExtra   # >= 1.3.0 - Enhanced tables
+
+# Visualization
+gridExtra    # >= 2.3 - Arrange multiple plots
+scales       # >= 1.2.0 - Scale functions for visualization
+
+# Jupyter Integration
+IRkernel     # >= 1.3 - R kernel for Jupyter notebooks
+
+# Installation Script
+# -------------------
+# Run the following in R to install all packages:
+#
+# packages <- c("tidyverse", "fixest", "did", "broom", "knitr", 
+#               "kableExtra", "gridExtra", "scales", "IRkernel")
+#
+# install.packages(packages)
+#
+# # Install and register IRkernel for Jupyter
+# IRkernel::installspec()
